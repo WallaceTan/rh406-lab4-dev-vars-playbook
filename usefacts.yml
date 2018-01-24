@@ -1,0 +1,11 @@
+---
+- name: make use of facts
+  hosts: all
+  tasks:
+    - name: display hostnames
+      debug:
+        msg: This is a host {{ ansible_fqdn }}
+
+    - name: not fact
+      debug:
+        msg: This server is {{ inventory_hostname }}
