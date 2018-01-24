@@ -1,0 +1,6 @@
+---
+- name: inclusion play
+  hosts: servera.lab.example.com
+  tasks:
+    - name: include tasks file
+      include: tasks/mytasks.yml
